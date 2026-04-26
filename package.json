@@ -1,0 +1,14 @@
+{
+  "name": "freelance-connect",
+  "version": "1.0.0",
+  "description": "Freelance Connect MERN",
+  "scripts": {
+    "install-all": "npm install --prefix server && npm install --prefix client",
+    "dev": "npx concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "start": "node server/index.js"
+  },
+  "dependencies": {
+    "cross-env": "^10.1.0"
+  }
+}
